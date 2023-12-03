@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o melhor professor do mundo</title>
+</head>
+<body>
+    <div id="tela1" class="tela tela-centro visivel">
+        <h1 class="text-muted">Bem-vindo</h1>
+        <p>Você está pronto?</p>
+        <button onclick="mudarTela('tela2')">Começar</button>
+    </div>
+
+    <div id="tela2" style="display: none;">
+        <h1 class="text-muted">Você é o José Andery?</h1>
+        <button onclick="mostrarTela3()">Sim</button>
+        <button onclick="alert('Então sai fora curioso');window.location.href='https://www.dicio.com.br/trouxa/';">Não</button>
+    </div>
+
+    <div id="tela3" style="display: none;">
+        <h1 class="text-muted"></h1>
+        <p>Bom dia, boa tarde ou boa noite, dependendo do momento em que estiver lendo estas palavras.</p>
+        <p>Quero expressar minha gratidão a você. Em seu primeiro ano como professor, tenho a certeza de que conquistou não apenas o meu coração, mas também o coração de muitos outros alunos. Foi incrível ter você como professor, e quero agradecer sinceramente por seu apoio e todas as palavras reconfortantes.</p>
+      
+     <p>Não tem nem como descrever suas aulas, foram as melhores que já tive em meus 3 anos nessa escola. Vou sentir muito sua falta.</p>
+      
+      <p>Muito obrigada por tornar cada momento importante. Vou lembrar de você em toda a minha jornada.</p>
+      <p>Com gratidão,</p>
+      <p>Larissa.</p>
+    </div>
+
+    <script>
+        function mudarTela(tela) {
+            document.getElementById('tela1').style.display = 'none';
+            document.getElementById(tela).style.display = 'block';
+        }
+
+        function mostrarTela3() {
+            document.getElementById('tela2').style.display = 'none';
+            document.getElementById('tela3').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
